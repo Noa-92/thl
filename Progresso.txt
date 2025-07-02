@@ -1,0 +1,28 @@
+//Quando da esse erro:
+branch main -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+//Use:
+git pull origin main --allow-unrelated-histories
+
+
+/* C-CP:
+
+GitHub Copilot
+Esse erro acontece quando você tenta fazer um git pull em um repositório local que não tem relação com o remoto (por exemplo, você iniciou o repositório local com git init e depois conectou a um repositório remoto já existente).
+
+Para forçar o merge, use:
+
+Depois, resolva possíveis conflitos, faça o commit e continue normalmente.
+
+isso aqui git pull origin main --allow-unrelated-histories autoriza merges nao relacionados?
+
+GitHub Copilot
+Sim, o comando:
+
+permite que o Git faça o merge de históricos que não têm relação (ou seja, repositórios que começaram de formas diferentes).
+Use esse comando apenas quando você tem certeza de que quer unir dois históricos distintos.
+*/
+
+
+C-CP -> Comentario do Copilot
